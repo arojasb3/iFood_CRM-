@@ -15,7 +15,7 @@ The first part is to analyze the dataset, remove NaNs, remove some outliers, gen
 
 The second part aims at clustering the customers using K-Means and K-Prototypes, then analyzing each of the cluster features and how effective was the campaign.
 
-![Cluster_0_pie](https://github.com/arojasb3/iFood_CRM-/tree/master/figures/cluster_piecharts.pdf)
+![Cluster_0_pie](https://github.com/arojasb3/iFood_CRM-/tree/master/figures/cluster_piecharts.png)
 
 As we can see in the picture above there is one group (Cluster 0) where customers accepted the campaign in a much higher proportion (28%) than in the complete dataset (15%). This group of customers are the ones with the highest income and they are also the ones that spend the most on every product. They prefer to shop in the actual stores or catalogs instead of visiting the webpage but they are in the middle of the pack for web purchases. It is like they usually don't visit the website, but when they do then they buy. Finally, Age is not a really defining variable of this cluster, we can find customers from all ages.
 
@@ -23,7 +23,7 @@ As we can see in the picture above there is one group (Cluster 0) where customer
 
 For the final part we used a logistic regression and a random forest model to try to predict the success of the last campaign on the customers. The imbalanced dataset was undersampled to achieve a 33% of sucess overall. The top 5 most important variables according the random forest can be seen below.
 
-![Cluster_0_pie](https://github.com/arojasb3/iFood_CRM-/tree/master/figures/top5_features_rf.pdf)
+![Top 5 features RF](https://github.com/arojasb3/iFood_CRM-/tree/master/figures/top5_features_rf.png)
 
 This combined with the logistic regression results showed us that old and loyal customers(Low recency and high enrollment time) may have a higher chance to accept the last campaign. Also the ones that prefer to spent money on the store, making sense with the high income conclusion from the cluster analysis.
 
